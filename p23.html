@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZAKI Media Sosial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+        }
+        .header h2 {
+            margin: 0;
+        }
+        .nav {
+            margin-top: 10px;
+        }
+        .nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .post-form {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .post-form select,
+        .post-form textarea,
+        .post-form button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .post {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .username {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .timestamp {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h2>Selamat Datang Di Rafa Media Sosial</h2>
+    <div class="nav">
+        <a href="#">Beranda</a>
+        <a href="#">Profil</a>
+        <a href="#">Pesan</a>
+        <a href="#">Cari Pengguna</a>
+        <a href="#">Logout</a>
+        <span>(Harvey_Van_Leeuwen)</span>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Beranda</h3>
+
+    <div class="post-form">
+        <label>Buat Postingan</label><br>
+        <select>
+            <option value="teks">Teks</option>
+            <option value="gambar">Gambar</option>
+        </select>
+        <textarea placeholder="Tulis sesuatu..."></textarea>
+        <button>Posting</button>
+    </div>
+
+    <div class="post">
+        <div class="username">Harvey_Van_Leeuwen</div>
+        <div class="timestamp">2025-05-25 09:38:12</div>
+        <p>P</p>
+        <img src="iks.jpg" alt="Foto postingan">
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Daftar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      width: 360px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .form-container {
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .switch {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .switch a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div id="loginForm" class="form-container">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+<button onclick="window.location.href='p23.html'">
+  Login
+</button>
+    <div class="switch">
+      Belum punya akun? <a onclick="showRegister()">Daftar</a>
+    </div>
+  </div>
+
+  <div id="registerForm" class="form-container hidden">
+    <h2>Daftar</h2>
+    <input type="text" placeholder="Nama Lengkap" required />
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <button>Daftar</button>
+    <div class="switch">
+      Sudah punya akun? <a onclick="showLogin()">Login</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const loginForm = document.getElementById("loginForm");
+  const registerForm = document.getElementById("registerForm");
+
+  function showRegister() {
+    loginForm.classList.add("hidden");
+    registerForm.classList.remove("hidden");
+  }
+
+  function showLogin() {
+    registerForm.classList.add("hidden");
+    loginForm.classList.remove("hidden");
+  }
+</script>
+
+</body>
+</html>
